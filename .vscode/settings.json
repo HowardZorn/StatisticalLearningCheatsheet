@@ -1,0 +1,39 @@
+{
+    "editor.wordWrap": "on",
+    "latex-workshop.latex.autoBuild.run": "never",
+    "latex-workshop.latex.magic.args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-shell-escape",
+        "%DOC%"
+    ],
+    "latex-workshop.latex.build.forceRecipeUsage": true,
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "latexmk -xelatex",
+            "tools": [
+                "latexmk -xelatex"
+            ]
+        }
+    ],
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk -xelatex",
+            "command": "latexmk",
+            "args": [
+                "-xelatex",
+                "-file-line-error",
+                "-halt-on-error",
+                "-shell-escape",
+                "-interaction=nonstopmode",
+                "-synctex=1",
+                "-pv-",
+                "-pvc-",
+                "-outdir=%OUTDIR%",
+                "%DOC%"
+            ],
+            "env": {}
+        }
+    ]
+}
